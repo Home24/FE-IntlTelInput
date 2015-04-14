@@ -278,6 +278,18 @@ I'm very open to contributions, big and small! For instructions on contributing 
 
 You will need to install [Grunt](http://gruntjs.com) to build the project, which relies on [npm](https://www.npmjs.org). You will also need [evenizer](https://github.com/katapad/evenizer) (`npm install -g evenizer`) and [imagemagick](http://www.imagemagick.org/) to generate retina flag sprites. Currently we pull in the flag icons in a submodule (until [this issue](https://github.com/behdad/region-flags/issues/3) is resolved), so you need to cd into region-flags/ and run `git submodule init` and then `git submodule update`. Then back in the project directory, run `npm install` to install Grunt etc, then `grunt bower` to install other dependencies, then you should be good to run `grunt build` to build the project. At this point, the included demo.html should be working. You should make your changes in the `src` directory and be sure to run `grunt build` again before committing.
 
+## How to build custom countries list
+
+ Follow instructions here to compile this file:
+ https://code.google.com/p/libphonenumber/source/browse/trunk/javascript/README
+
+ Once setup, to re-compile:
+ 1) Copy the contents of PhoneNumberMetadata.xml to libphonenumber/resources/PhoneNumberMetadata.xml
+ 2) Copy the contents of this file into libphonenumber/javascript/i18n/phonenumbers/demo.js
+ 3) ant -f java/build.xml build-js-metadata
+ 4) ant -f ~/src/libphonenumber/javascript/build.xml compile-demo
+ 5) Copy demo-compiled.js to build/utils.js
+
 
 ## Attributions
 * Flag images from [region-flags](https://github.com/behdad/region-flags)
