@@ -1,6 +1,10 @@
 {
   "name": "home24-intl-tel-input",
   "version": "5.8.7",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Home24/intl-tel-input.git"
+  },
   "main": [
     "./build/js/intlTelInput.min.js",
     "./build/js/utils.min.js",
