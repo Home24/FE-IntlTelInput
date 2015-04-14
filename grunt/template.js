@@ -8,9 +8,15 @@ module.exports = function(grunt) {
       src: 'src/js/wrapper.js.ejs',
       dest: 'tmp/wrapped.js',
       variables: function() {
+        var countriesData = grunt.file.readJSON('src/config/data.json');
+        var availableCountries = grunt.file.readJSON('src/config/availableCountries.json');
+        var countries = countriesData.allCountries.filter(function(element) {
+            return availableCountries.availableCountries.indexOf(element[1]) !== -1;
+        });
         return {
           plugin: grunt.file.read('src/js/intlTelInput.js'),
-          data: grunt.file.read('src/js/data.js'),
+          data: JSON.stringify(countries),
+          dataFunction: grunt.file.read('src/js/dataFunction.js')
         }
       }
     },

@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   return {
     options: {
       banner: '/*\n' +
-        'International Telephone Input v<%= package.version %>\n' +
+        'Home24 International Telephone Input v<%= package.version %>\n' +
         '<%= package.repository.url %>\n' +
         '*/\n'
     },
@@ -14,12 +14,14 @@ module.exports = function(grunt) {
         preserveComments: true
       },
       files: {
-        'build/js/intlTelInput.js': 'tmp/wrapped.js'
+        'build/js/intlTelInput.js': 'tmp/wrapped.js',
+        'build/js/utils.js': 'lib/libphonenumber/build/utils.js'
       }
     },
     prod: {
       files: {
-        'tmp/wrapped.min.js': 'tmp/wrapped.js'
+        'tmp/wrapped.min.js': 'tmp/wrapped.js',
+        'build/js/utils.min.js': 'lib/libphonenumber/build/utils.js'
       }
     }
   };

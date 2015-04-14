@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         }
     },
     main: {
-      src: ['src/img/flags/*.png', '!<%= sprite.retina.src %>'],
+      src: ['src/img/flags/*.png', 'src/img/flags/default.png', '!<%= sprite.retina.src %>'],
       dest: 'build/img/flags.png',
       cssTemplate: 'grunt/tmpl/sprite-retina-mustache.scss',
       destCss: 'src/css/sprite.scss',

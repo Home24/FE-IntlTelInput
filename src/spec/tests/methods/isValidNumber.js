@@ -25,12 +25,12 @@ describe("isValidNumber:", function() {
     });
 
     it("returns true for: valid intl number", function() {
-      input.intlTelInput("setNumber", "+44 7733 123456");
+      input.intlTelInput("setNumber", "+380 93 1948839");
       expect(input.intlTelInput("isValidNumber")).toBeTruthy();
     });
 
     it("returns false for: invalid intl number", function() {
-      input.intlTelInput("setNumber", "+44 7733 123");
+      input.intlTelInput("setNumber", "+380 93 19488");
       expect(input.intlTelInput("isValidNumber")).toBeFalsy();
     });
 
@@ -51,19 +51,19 @@ describe("isValidNumber:", function() {
     });
 
     it("returns false for: incorrect selected country, valid number", function() {
-      input.intlTelInput("setNumber", "07733 123456");
+      input.intlTelInput("setNumber", "93 1948839");
       expect(input.intlTelInput("isValidNumber")).toBeFalsy();
     });
 
     it("returns true for: correct selected country, valid number", function() {
-      input.intlTelInput("selectCountry", "gb");
-      input.intlTelInput("setNumber", "07733 123456");
+      input.intlTelInput("selectCountry", "ua");
+      input.intlTelInput("setNumber", "93 1948839");
       expect(input.intlTelInput("isValidNumber")).toBeTruthy();
     });
 
     it("returns false for: correct selected country, invalid number", function() {
-      input.intlTelInput("selectCountry", "gb");
-      input.intlTelInput("setNumber", "07733 123");
+      input.intlTelInput("selectCountry", "ua");
+      input.intlTelInput("setNumber", "93194883");
       expect(input.intlTelInput("isValidNumber")).toBeFalsy();
     });
 

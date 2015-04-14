@@ -1,5 +1,5 @@
 {
-  "name": "intl-tel-input",
+  "name": "home24-intl-tel-input",
   "version": "5.8.7",
   "description": "A jQuery plugin for entering international telephone numbers",
   "keywords": [
@@ -25,6 +25,7 @@
     "grunt-contrib-sass": "~0.8.1",
     "grunt-contrib-uglify": "~0.6.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-clean": "^0.6.0",
     "grunt-exec": "^0.4.6",
     "grunt-replace": "^0.8.0",
     "grunt-responsive-images": "^0.1.6",

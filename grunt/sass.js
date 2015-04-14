@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     main: {
       options: {
         sourcemap: "none",
-        style: "compressed"
+        //style: "compressed"
       },
       files: {
         'build/css/intlTelInput.css': 'src/css/intlTelInput.scss'

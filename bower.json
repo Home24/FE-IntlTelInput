@@ -1,9 +1,9 @@
 {
-  "name": "intl-tel-input",
+  "name": "home24-intl-tel-input",
   "version": "5.8.7",
   "main": [
     "./build/js/intlTelInput.min.js",
-    "./lib/libphonenumber/build/utils.js",
+    "./build/js/utils.min.js",
     "./build/img/flags.png",
     "./build/img/flags@2x.png",
     "./build/css/intlTelInput.css"
