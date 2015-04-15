@@ -3,7 +3,7 @@
   "version": "6.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Home24/intl-tel-input.git"
+    "url": "git://github.com/Home24/FE-IntlTelInput.git"
   },
   "main": [
     "./build/js/intlTelInput.min.js",
