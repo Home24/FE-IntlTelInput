@@ -14,14 +14,22 @@ module.exports = function(grunt) {
       },
       files: [{
         expand: true,
-        cwd: "region-flags/png/",
-        src: ['*.png'],
+        src: ['region-flags/png/*.png', 'src/img/' + defaultImage + '.png'],
         filter: function(filepath) {
             var countries = file.availableCountries;
 
             countries.push(defaultImage);
 
-            return (countries.indexOf(filepath.replace("region-flags/png/", "").replace(".png", "").toLowerCase()) !== -1);
+            return (countries.indexOf(
+                filepath
+                    .replace("region-flags/png/", "")
+                    .replace("src/img/", "")
+                    .slice(0, -4)
+                    .toLowerCase()) !== -1);
+        },
+        rename: function(dest, src) {
+            var fileName = src.match(/\/([^/]*)$/)[1];
+            return dest + fileName;
         },
         dest: 'src/img/flags/@2x/'
       }]

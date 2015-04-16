@@ -7,9 +7,9 @@
 }
 
 .iti-flag {
-  $item-width-maps: (ad: 20px, al: 20px, at: 20px, ba: 20px, be: 18px, bg: 20px, by: 20px, ch: 15px, cz: 20px, de: 20px, dk: 20px, ee: 20px, es: 20px, eu: 20px, fi: 20px, fo: 20px, fr: 20px, gb: 20px, gi: 20px, gr: 20px, hr: 20px, hu: 20px, ie: 20px, is: 20px, it: 20px, li: 20px, lt: 20px, lu: 20px, lv: 20px, mc: 19px, md: 20px, me: 20px, mk: 20px, mt: 20px, nl: 20px, no: 20px, pl: 20px, pt: 20px, ro: 20px, rs: 20px, ru: 20px, se: 20px, si: 20px, sk: 20px, sm: 20px, ua: 20px, );
-  $item-height-maps: (ad: 14px, al: 15px, at: 14px, ba: 10px, be: 15px, bg: 12px, by: 10px, ch: 15px, cz: 14px, de: 12px, dk: 15px, ee: 13px, es: 14px, eu: 14px, fi: 12px, fo: 15px, fr: 14px, gb: 10px, gi: 10px, gr: 14px, hr: 10px, hu: 10px, ie: 10px, is: 15px, it: 14px, li: 12px, lt: 12px, lu: 12px, lv: 10px, mc: 15px, md: 10px, me: 10px, mk: 10px, mt: 14px, nl: 14px, no: 15px, pl: 13px, pt: 14px, ro: 14px, rs: 14px, ru: 14px, se: 13px, si: 10px, sk: 14px, sm: 15px, ua: 14px, );
-  $standard-country: 'eu';
+  $item-width-maps: (ad: 20px, al: 20px, at: 20px, ba: 20px, be: 18px, bg: 20px, by: 20px, ch: 15px, cz: 20px, de: 20px, dk: 20px, ee: 20px, es: 20px, fi: 20px, fo: 20px, fr: 20px, gb: 20px, gi: 20px, gr: 20px, hr: 20px, hu: 20px, ie: 20px, is: 20px, it: 20px, li: 20px, lt: 20px, lu: 20px, lv: 20px, mc: 19px, md: 20px, me: 20px, mk: 20px, mt: 20px, nl: 20px, no: 20px, pl: 20px, pt: 20px, ro: 20px, rs: 20px, ru: 20px, se: 20px, si: 20px, sk: 20px, sm: 20px, ua: 20px, earth_flag: 20px, );
+  $item-height-maps: (ad: 14px, al: 15px, at: 14px, ba: 10px, be: 15px, bg: 12px, by: 10px, ch: 15px, cz: 14px, de: 12px, dk: 15px, ee: 13px, es: 14px, fi: 12px, fo: 15px, fr: 14px, gb: 10px, gi: 10px, gr: 14px, hr: 10px, hu: 10px, ie: 10px, is: 15px, it: 14px, li: 12px, lt: 12px, lu: 12px, lv: 10px, mc: 15px, md: 10px, me: 10px, mk: 10px, mt: 14px, nl: 14px, no: 15px, pl: 13px, pt: 14px, ro: 14px, rs: 14px, ru: 14px, se: 13px, si: 10px, sk: 14px, sm: 15px, ua: 14px, earth_flag: 14px, );
+  $standard-country: earth_flag;
   width: map-get($item-width-maps, $standard-country);
   height: map-get($item-height-maps, $standard-country);
   box-shadow: 0px 0px 1px 0px #888;
@@ -167,333 +167,333 @@
       height: 14px;
       background-position: -257px 0px;
     }
-    @if eu != $standard-country {
-      &.eu {
-        height: 14px;
-        background-position: -279px 0px;
-      }
-    }
-    @if eu == $standard-country {
-      height: 14px;
-      background-position: -279px 0px;
-    }
     @if fi != $standard-country {
       &.fi {
         height: 12px;
-        background-position: -301px 0px;
+        background-position: -279px 0px;
       }
     }
     @if fi == $standard-country {
       height: 12px;
-      background-position: -301px 0px;
+      background-position: -279px 0px;
     }
     @if fo != $standard-country {
       &.fo {
         height: 15px;
-        background-position: -323px 0px;
+        background-position: -301px 0px;
       }
     }
     @if fo == $standard-country {
       height: 15px;
-      background-position: -323px 0px;
+      background-position: -301px 0px;
     }
     @if fr != $standard-country {
       &.fr {
         height: 14px;
-        background-position: -345px 0px;
+        background-position: -323px 0px;
       }
     }
     @if fr == $standard-country {
       height: 14px;
-      background-position: -345px 0px;
+      background-position: -323px 0px;
     }
     @if gb != $standard-country {
       &.gb {
         height: 10px;
-        background-position: -367px 0px;
+        background-position: -345px 0px;
       }
     }
     @if gb == $standard-country {
       height: 10px;
-      background-position: -367px 0px;
+      background-position: -345px 0px;
     }
     @if gi != $standard-country {
       &.gi {
         height: 10px;
-        background-position: -389px 0px;
+        background-position: -367px 0px;
       }
     }
     @if gi == $standard-country {
       height: 10px;
-      background-position: -389px 0px;
+      background-position: -367px 0px;
     }
     @if gr != $standard-country {
       &.gr {
         height: 14px;
-        background-position: -411px 0px;
+        background-position: -389px 0px;
       }
     }
     @if gr == $standard-country {
       height: 14px;
-      background-position: -411px 0px;
+      background-position: -389px 0px;
     }
     @if hr != $standard-country {
       &.hr {
         height: 10px;
-        background-position: -433px 0px;
+        background-position: -411px 0px;
       }
     }
     @if hr == $standard-country {
       height: 10px;
-      background-position: -433px 0px;
+      background-position: -411px 0px;
     }
     @if hu != $standard-country {
       &.hu {
         height: 10px;
-        background-position: -455px 0px;
+        background-position: -433px 0px;
       }
     }
     @if hu == $standard-country {
       height: 10px;
-      background-position: -455px 0px;
+      background-position: -433px 0px;
     }
     @if ie != $standard-country {
       &.ie {
         height: 10px;
-        background-position: -477px 0px;
+        background-position: -455px 0px;
       }
     }
     @if ie == $standard-country {
       height: 10px;
-      background-position: -477px 0px;
+      background-position: -455px 0px;
     }
     @if is != $standard-country {
       &.is {
         height: 15px;
-        background-position: -499px 0px;
+        background-position: -477px 0px;
       }
     }
     @if is == $standard-country {
       height: 15px;
-      background-position: -499px 0px;
+      background-position: -477px 0px;
     }
     @if it != $standard-country {
       &.it {
         height: 14px;
-        background-position: -521px 0px;
+        background-position: -499px 0px;
       }
     }
     @if it == $standard-country {
       height: 14px;
-      background-position: -521px 0px;
+      background-position: -499px 0px;
     }
     @if li != $standard-country {
       &.li {
         height: 12px;
-        background-position: -543px 0px;
+        background-position: -521px 0px;
       }
     }
     @if li == $standard-country {
       height: 12px;
-      background-position: -543px 0px;
+      background-position: -521px 0px;
     }
     @if lt != $standard-country {
       &.lt {
         height: 12px;
-        background-position: -565px 0px;
+        background-position: -543px 0px;
       }
     }
     @if lt == $standard-country {
       height: 12px;
-      background-position: -565px 0px;
+      background-position: -543px 0px;
     }
     @if lu != $standard-country {
       &.lu {
         height: 12px;
-        background-position: -587px 0px;
+        background-position: -565px 0px;
       }
     }
     @if lu == $standard-country {
       height: 12px;
-      background-position: -587px 0px;
+      background-position: -565px 0px;
     }
     @if lv != $standard-country {
       &.lv {
         height: 10px;
-        background-position: -609px 0px;
+        background-position: -587px 0px;
       }
     }
     @if lv == $standard-country {
       height: 10px;
-      background-position: -609px 0px;
+      background-position: -587px 0px;
     }
     @if mc != $standard-country {
       &.mc {
         height: 15px;
-        background-position: -631px 0px;
+        background-position: -609px 0px;
       }
     }
     @if mc == $standard-country {
       height: 15px;
-      background-position: -631px 0px;
+      background-position: -609px 0px;
     }
     @if md != $standard-country {
       &.md {
         height: 10px;
-        background-position: -652px 0px;
+        background-position: -630px 0px;
       }
     }
     @if md == $standard-country {
       height: 10px;
-      background-position: -652px 0px;
+      background-position: -630px 0px;
     }
     @if me != $standard-country {
       &.me {
         height: 10px;
-        background-position: -674px 0px;
+        background-position: -652px 0px;
       }
     }
     @if me == $standard-country {
       height: 10px;
-      background-position: -674px 0px;
+      background-position: -652px 0px;
     }
     @if mk != $standard-country {
       &.mk {
         height: 10px;
-        background-position: -696px 0px;
+        background-position: -674px 0px;
       }
     }
     @if mk == $standard-country {
       height: 10px;
-      background-position: -696px 0px;
+      background-position: -674px 0px;
     }
     @if mt != $standard-country {
       &.mt {
         height: 14px;
-        background-position: -718px 0px;
+        background-position: -696px 0px;
       }
     }
     @if mt == $standard-country {
       height: 14px;
-      background-position: -718px 0px;
+      background-position: -696px 0px;
     }
     @if nl != $standard-country {
       &.nl {
         height: 14px;
-        background-position: -740px 0px;
+        background-position: -718px 0px;
       }
     }
     @if nl == $standard-country {
       height: 14px;
-      background-position: -740px 0px;
+      background-position: -718px 0px;
     }
     @if no != $standard-country {
       &.no {
         height: 15px;
-        background-position: -762px 0px;
+        background-position: -740px 0px;
       }
     }
     @if no == $standard-country {
       height: 15px;
-      background-position: -762px 0px;
+      background-position: -740px 0px;
     }
     @if pl != $standard-country {
       &.pl {
         height: 13px;
-        background-position: -784px 0px;
+        background-position: -762px 0px;
       }
     }
     @if pl == $standard-country {
       height: 13px;
-      background-position: -784px 0px;
+      background-position: -762px 0px;
     }
     @if pt != $standard-country {
       &.pt {
         height: 14px;
-        background-position: -806px 0px;
+        background-position: -784px 0px;
       }
     }
     @if pt == $standard-country {
       height: 14px;
-      background-position: -806px 0px;
+      background-position: -784px 0px;
     }
     @if ro != $standard-country {
       &.ro {
         height: 14px;
-        background-position: -828px 0px;
+        background-position: -806px 0px;
       }
     }
     @if ro == $standard-country {
       height: 14px;
-      background-position: -828px 0px;
+      background-position: -806px 0px;
     }
     @if rs != $standard-country {
       &.rs {
         height: 14px;
-        background-position: -850px 0px;
+        background-position: -828px 0px;
       }
     }
     @if rs == $standard-country {
       height: 14px;
-      background-position: -850px 0px;
+      background-position: -828px 0px;
     }
     @if ru != $standard-country {
       &.ru {
         height: 14px;
-        background-position: -872px 0px;
+        background-position: -850px 0px;
       }
     }
     @if ru == $standard-country {
       height: 14px;
-      background-position: -872px 0px;
+      background-position: -850px 0px;
     }
     @if se != $standard-country {
       &.se {
         height: 13px;
-        background-position: -894px 0px;
+        background-position: -872px 0px;
       }
     }
     @if se == $standard-country {
       height: 13px;
-      background-position: -894px 0px;
+      background-position: -872px 0px;
     }
     @if si != $standard-country {
       &.si {
         height: 10px;
-        background-position: -916px 0px;
+        background-position: -894px 0px;
       }
     }
     @if si == $standard-country {
       height: 10px;
-      background-position: -916px 0px;
+      background-position: -894px 0px;
     }
     @if sk != $standard-country {
       &.sk {
         height: 14px;
-        background-position: -938px 0px;
+        background-position: -916px 0px;
       }
     }
     @if sk == $standard-country {
       height: 14px;
-      background-position: -938px 0px;
+      background-position: -916px 0px;
     }
     @if sm != $standard-country {
       &.sm {
         height: 15px;
-        background-position: -960px 0px;
+        background-position: -938px 0px;
       }
     }
     @if sm == $standard-country {
       height: 15px;
-      background-position: -960px 0px;
+      background-position: -938px 0px;
     }
     @if ua != $standard-country {
       &.ua {
         height: 14px;
-        background-position: -982px 0px;
+        background-position: -960px 0px;
       }
     }
     @if ua == $standard-country {
+      height: 14px;
+      background-position: -960px 0px;
+    }
+    @if earth_flag != $standard-country {
+      &.earth_flag {
+        height: 14px;
+        background-position: -982px 0px;
+      }
+    }
+    @if earth_flag == $standard-country {
       height: 14px;
       background-position: -982px 0px;
     }

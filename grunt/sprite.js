@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+  var defaultImage = grunt.file.readJSON('src/config/defaultImage.json').defaultImage;
+
   return {
     retina: {
         src: 'src/img/flags/*@2x.png',
@@ -26,6 +28,9 @@ module.exports = function(grunt) {
       },
       cssOpts: {
         variableNameTransforms: ['toLowerCase']
+      },
+      cssVarMap: function (sprite) {
+          sprite.standartCountry = defaultImage;
       }
     }
   };

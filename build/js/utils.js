@@ -1,6 +1,6 @@
 /*
-Home24 International Telephone Input v5.8.7
-https://github.com/Bluefieldscom/intl-tel-input.git
+Home24 International Telephone Input v6.0.0
+https://github.com/Home24/FE-IntlTelInput.git
 */
 (function() {
     var aa = this;

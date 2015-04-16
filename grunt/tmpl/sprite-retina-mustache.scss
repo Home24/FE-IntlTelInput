@@ -9,7 +9,7 @@
 .iti-flag {
   $item-width-maps: ({{#items}}{{strings.name}}: {{px.width}}, {{/items}});
   $item-height-maps: ({{#items}}{{strings.name}}: {{px.height}}, {{/items}});
-  $standard-country: 'eu';
+  $standard-country: {{items.[0].standartCountry}};
   width: map-get($item-width-maps, $standard-country);
   height: map-get($item-height-maps, $standard-country);
   box-shadow: 0px 0px 1px 0px #888;

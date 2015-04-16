@@ -1,3 +1,3 @@
 module.exports = function(grunt) {
-    return ["src/img/"];
+    return ["src/img/flags"];
 };
